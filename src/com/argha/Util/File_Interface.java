@@ -22,11 +22,15 @@ package com.argha.Util;
  * @author Argha
  */
 public interface File_Interface {
-    
+
     public void Writer (String location , String name , String type, String contents); //This method is for writing the file
-    
+
     public void Check (String location_check , String name_check , String type_check); // This method is for checking some of the file details which was created
-    
-    public void Run_Bat (String locate, String locate_name, String locate_type); //This method is for running the file
-    
+
+    /*
+    using location we can get the file name and content
+    so we don't these redundant parameters
+     */
+     void Run_Bat (String location); //This method is for running the file
+
 }
